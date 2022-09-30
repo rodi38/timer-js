@@ -22,8 +22,6 @@ function startTimer(sec){
 
 start.addEventListener('click', (e)=>{
     clearInterval(timer);
-    segundos++
-    relogio.innerHTML = getTimeSeconds(segundos);
     startTimer(1000);
     relogio.style.color = '#000';
 });
@@ -35,8 +33,6 @@ pause.addEventListener('click', (e)=>{
 
 speedUp.addEventListener('click', (e)=>{
     clearInterval(timer);
-    segundos++
-    relogio.innerHTML = getTimeSeconds(segundos);
     startTimer(500);
     relogio.style.color = '#000';
 })
